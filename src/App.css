@@ -1,0 +1,126 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --main-color:#b45b35;
+}
+body{
+  overflow-x: hidden !important;
+  
+  }
+
+
+.brand{
+  color: var(--main-color ) !important;
+}
+button{
+  color: var(--main-color) !important ;
+  border: 1px solid var(--main-color) !important;
+}
+input{
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  outline: none;
+}
+button:hover{
+
+  background-color: var(--main-color) !important ;
+  color: #f8f8f8 !important;
+}
+
+h3{
+  color: var(--main-color);
+}
+.underline{
+  height: 5px;
+  width: 200px;
+  background-color: var(--main-color);
+  border-radius: 5px;
+}
+
+.card{
+  color: var(--main-color);
+  overflow:hidden  !important;
+  border-radius: 15px !important;
+  background-color: #f8f8f8;
+}
+ .card-text:last-child,.price,.card-title{
+  font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--main-color) !important;
+
+}
+.card-text:last-child{
+  font-size: 1.1rem;
+
+}
+.box-img{
+   width: 25% !important;
+   height: 220px;
+   position: relative;
+   
+  
+}
+.box-img img{
+   width: 100% !important;
+   height: 100%;
+   position: absolute;
+  
+   
+}
+.row>* {
+  padding-right: calc(var(--bs-gutter-x)* 0) !important;
+
+}
+.category{
+  flex-wrap: wrap;
+}
+
+@media (min-width: 280px) and (max-width: 350px){
+
+  .card-text:last-child,.price,.card-title{
+
+    font-weight: 500 !important;
+    font-size: 1rem;
+  }
+  
+  .box-img{
+    width: 50% !important;
+  }
+  .nav{
+    width: 103% !important ;
+    overflow-x: hidden !important;
+  }
+
+
+}
+
+@media (min-width: 340px) and (max-width: 800px){
+
+  .box-img{
+    width: 50% !important;
+  }
+    .nav{
+    width: 103% !important ;
+    overflow-x: hidden !important;
+  }
+  
+
+}
+
